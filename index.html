@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese New Year Cookies | USC Computer Graphics</title>
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background: #1a1a2e;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 90px 20px 60px;
+        }
+
+        h1 {
+            margin: 0;
+            color: #f2bf3f;
+            font-size: 52px;
+        }
+
+        header p {
+            margin-top: 15px;
+            color: #bbbbbb;
+            font-size: 20px;
+        }
+
+        .launch-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 18px 34px;
+            background: #f2bf3f;
+            color: #1a1a2e;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+
+        .launch-button:hover {
+            background: #ffd86a;
+            transform: translateY(-2px);
+        }
+
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding-bottom: 80px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #f2bf3f;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: #24243e;
+            padding: 24px;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card p {
+            color: #bbbbbb;
+            line-height: 1.5;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 8px 8px 0 0;
+            padding: 10px 18px;
+            background: #3c3c5c;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .button:hover {
+            background: #f2bf3f;
+            color: #1a1a2e;
+        }
+
+        video {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 10px;
+            background: black;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chinese New Year Cookies</h1>
+    <p>USC Computer Graphics Final Project</p>
+
+    <a class="launch-button" href="./threejs/" target="_blank">
+        Launch THREE.js Project
+    </a>
+</header>
+
+<main>
+
+    <section>
+        <h2>Project</h2>
+        <p>
+            An interactive 3D Chinese New Year cookie scene created using
+            OpenSCAD and THREE.js.
+        </p>
+    </section>
+
+    <section>
+        <h2>Source Code</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>THREE.js Code</h3>
+                <p>
+                    Main THREE.js source code for scene setup,
+                    model loading, lighting, animation, and rendering.
+                </p>
+
+                <a class="button" href="./code/main.js" target="_blank">
+                    View THREE.js Code
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Texture / Material Code</h3>
+                <p>
+                    Material and texture-related code used by the project.
+                </p>
+
+                <a class="button" href="./code/texture/materials.js" target="_blank">
+                    View Material Code
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Shader Code</h2>
+
+        <div class="card">
+            <p>
+                Vertex and fragment shader source files used for the
+                pineapple tart and flower cookie effects.
+            </p>
+
+            <a class="button" href="./threejs/shaders/pineapple.vert" target="_blank">
+                Pineapple Vertex Shader
+            </a>
+
+            <a class="button" href="./threejs/shaders/pineapple.frag" target="_blank">
+                Pineapple Fragment Shader
+            </a>
+
+            <a class="button" href="./threejs/shaders/flower.vert" target="_blank">
+                Flower Vertex Shader
+            </a>
+
+            <a class="button" href="./threejs/shaders/flower.frag" target="_blank">
+                Flower Fragment Shader
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Models</h2>
+
+        <div class="card">
+            <h3>Model Files</h3>
+
+            <p>
+                OpenSCAD source and exported STL model files used in the project.
+            </p>
+
+            <a
+                class="button"
+                href="https://github.com/Cid-Lin/Cid-Lin.github.io/tree/main/threejs/models"
+                target="_blank"
+            >
+                View Model Files
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Project Demo</h2>
+
+        <p>
+            Screen recording of the final interactive THREE.js project.
+        </p>
+
+        <video controls>
+            <source src="./video/Video.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+
+        <br>
+
+        <a class="button" href="./video/Video.mp4" target="_blank">
+            Open Video File
+        </a>
+    </section>
+
+    <section>
+        <h2>Presentation</h2>
+
+        <div class="card">
+            <h3>Final Presentation Slides</h3>
+
+            <a class="button" href="./slides/3D_Project_Final.pdf" target="_blank">
+                View Presentation PDF
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Written Report</h2>
+
+        <div class="card">
+            <h3>Final Project Report</h3>
+
+            <a class="button" href="./report/Report.docx" target="_blank">
+                View Written Report
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    USC Computer Graphics — Final Project
+</footer>
+
+</body>
+</html>
