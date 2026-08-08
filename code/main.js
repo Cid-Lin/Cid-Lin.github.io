@@ -118,7 +118,7 @@
         return n1 * (x -= 2.625 / d1) * x + 0.984375;
     }
 
-    const MODEL_BASE_PATH = '../models/';
+    const MODEL_BASE_PATH = './models/';
     const STL_LOADER_URL = 'https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js';
 
     const plateMaterial = new THREE.MeshStandardMaterial({
